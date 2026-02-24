@@ -12,22 +12,6 @@ st.set_page_config(page_title="영문공시 필터링 도구 (KOSPI/KOSDAQ)", la
 
 st.title('🎯 오늘의 영문 번역대상 공시')
 st.markdown("---")
-
-# --- 사이드바 공지사항 ---
-with st.sidebar:
-    st.markdown("## 🚨 중요 공지")
-    st.warning(
-        """
-        **본 사이트는 실시간 데이터를 참조하므로, 트래픽 집중 시 외부 서버로부터 일시적 차단이 발생할 수 있습니다.** 안정적인 서비스 이용을 위해 **총 3개의 사이트**를 운영 중이니, 장애 발생 시 다른 주소로 접속해 보시기 바랍니다.
-        
-        ---
-        **🔗 이용 가능한 사이트 목록**
-        1. https://englishkind.streamlit.app/
-        2. https://english-kospi.streamlit.app/
-        3. https://englishkospi.streamlit.app/
-        """
-    )
-    st.markdown("---")
     
 # 2. 데이터 로드 (캐싱 적용, 범용 함수로 변경)
 @st.cache_data
